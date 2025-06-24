@@ -165,4 +165,165 @@ This is the customer’s responsibility, not an AWS responsibility.
 https://digitalcloud.training/aws-shared-responsibility-model/
 
 
+# Exam 2 
 
+Q. A company has an on-premises Linux-based server with an Oracle database that runs on it. The company wants to migrate the database server to run on an Amazon EC2 instance in AWS.
+Which service should the company use to complete the migration?
+A. AWS Application Migration Service (AWS MGN) 
+Explanation: Correct. AWS MGN is an automated lift-and-shift solution. This solution can migrate physical servers and any databases or applications that run on them to EC2 instances in AWS.
+
+Q. A company requires a relational database on AWS that records new customer orders from a website.
+Which AWS service or feature will meet this requirement?
+A. Amazon Aurora
+Explanation: Correct. Aurora is a MySQL- and PostgreSQL-compatible relational database
+built for the cloud. Aurora combines the performance and availability of traditional 
+enterprise databases with the simplicity and cost-effectiveness of open source databases.
+
+Q. A user deploys an Amazon RDS DB instance in multiple Availability Zones.
+This strategy involves which pillar of the AWS Well-Architected Framework?
+A. Reliability
+Explanation: The reliability pillar includes the ability of a workload to perform
+its intended function correctly and consistently when it is expected to do so.
+The deployment of Amazon RDS in multiple Availability Zones supports the goal of
+reliability because it reduces single points of failure.
+
+Q. A company wants to establish a consistent and private connection from the company's on-premises data center to the AWS Cloud.
+Which AWS service will meet these requirements?
+A. AWS Direct Connect
+Explanation: Direct Connect links your internal network to a Direct Connect location through 
+a standard Ethernet fiber-optic cable. One end of the cable connects to your router.
+The other end of the cable connects to a Direct Connect router. AWS Direct Connect 
+is consistent and private because your company is the only user of the cable.
+
+Q. What are benefits of using the AWS Cloud for companies with customers in many countries around the world? (Select TWO.)
+A. 
+    * Companies can deploy applications in multiple AWS Regions to reduce latency 
+    * Amazon Cloudfront has multiple edge locations around the world to reduce 
+    latency.
+Explanation:
+    * The use of regions around the world will improve an application's global performance
+    and reduce latency for users.
+    * CloudFront is a content delivery network (CDN) service that securely delivers data,
+    videos, applications, and APIs to global customers with low latency and high transfer 
+    speeds.
+
+Q. Which AWS service allows customers to purchase unused Amazon EC2 capacity at an often discounted rate?
+A. Spot Instances
+Explanation: With Spot Instances, you can access unused EC2 capacity. Spot Instances can be discounted. 
+
+Q. A company wants to create a learning application for students. The learning 
+application must give students the option to choose a button to have the text 
+read out loud to them.
+Which AWS machine learning service will meet this requirement?
+A. Amazon Polly
+Explanation: Amazon Polly is a machine learning service that converts text 
+to speech. This service provides the ability to read text out loud. 
+
+Q. A company requires an encrypted connection between the company's on-premises servers and AWS. The connection must use the company's existing internet connection.
+Which solution will meet these requirements?
+A. AWS Site-to-Site VPN
+Explanation: Site-to-Site VPN creates an encrypted network path between 
+your on-premises network and your AWS Cloud network. This connection 
+between your on-premises network and your AWS Cloud network uses the internet. 
+
+Q. Which AWS service should be used to implement encryption in transit?
+A. AWS Certificate Manager (ACM)
+Explanation: ACM is a service that is used to create, store, and renew public 
+and private SSL/TLS certificates. You can use ACM to implement encryption in transit 
+and at rest by using a protocol, such as TLS.
+
+Q. A user needs to automatically discover, classify, and protect sensitive data 
+stored in Amazon S3.
+Which AWS service can meet these requirements?
+A. Amazon Macie
+Explanation: Macie is an automated security assessment service that helps 
+improve the security and compliance of applications deployed on AWS.
+
+Q. An application development team needs a solution that sends an alert 
+to an entire development team if a quality assurance test fails on an application.
+Which AWS service should the application development team use to meet the requirement?
+A. Amazon Simple Notification Service (Amazon SNS)
+Explanation: Amazon SNS is a service used to deliver publications to subscribers.
+You can use Amazon SNS to send notifications, such as mobile text messages, 
+push notifications, or emails, to subscribers of a quality assurance test-failure topic.
+
+Q. Which credential components are required to gain programmatic access to an AWS account? (Select TWO.)
+A. 
+    * An access key ID
+    * A secret access key
+Explanation: 
+    * Programmatic access requires an access key ID and a secret access key that 
+    can be assigned to an AWS user.
+    * Programmatic access requires an access key ID and a secret access key that
+    can be assigned to an AWS user.
+
+Q. How does AWS charge for AWS Lambda usage once the free tier has been exceeded? (Select TWO.)
+A.
+    * By the time it takes for the Lambda function to run
+    * By the number of requests made for a given Lambda function
+Explanation: 
+    * Lambda charges are dependent on the amount of time it takes to run the code.
+    * Lambda charges are dependent on the number of requests for your Lambda functions.
+
+Q. A company is hosting a static website from a single Amazon S3 bucket. 
+Which AWS service will achieve lower latency and high transfer speeds?
+A. Amazon CloudFront
+Explanation:  CloudFront is a web service that speeds up the distribution of your 
+static and dynamic web content, such as .html, .css, .js, and image files, 
+to your users. Content is cached in edge locations. Content that is repeatedly 
+accessed can be served from the edge locations instead of the source S3 bucket.
+
+Q. Each department within a company has its own independent AWS account and its 
+own payment method. The company needs to centralize departmental governance and 
+consolidate payments.
+How can the company achieve these objectives by using AWS services or features?
+A. Create an organization in AWS Organizations with all features enabled within
+one account. Invite all acounts to join the organization.
+Explanation: Organizations provides centralized governance and billing for an 
+AWS environment, including multiple accounts.
+
+Q. What are the advantages of deploying an application with Amazon EC2 instances 
+in multiple Availability Zones? (Select TWO.)
+
+A.
+    * Preventing a single point of failure
+    * Increasing the availability of the application
+Explanation: 
+    * The deployment of the EC2 instances in multiple Availability Zones prevents 
+    a single point of failure. Availability Zones are designed for physical 
+    redundancy and to provide resilience with uninterrupted performance.
+    * If you host all your instances in a single location that is affected by a
+    failure, none of your instances would be available. Availability Zones are 
+    designed for physical redundancy and to provide resilience with uninterrupted 
+    performance.
+
+Q. Which tasks are the customer's responsibility according to the 
+AWS shared responsibility model? (Select TWO.)
+
+A.
+    * Configure IAM users according to the principle of least privilege.
+    * Configure an Amazon S3 bucket to allow public access.
+Explanation: 
+    * AWS provides AWS Identity and Access Management (IAM) as a service.
+    The customer defines IAM users and the access policies that apply to those users.
+    * The customer determines access permissions to S3 buckets that the customer owns.
+
+Q. Which of the funcitonalities are characteristics of Amazon S3? (Select TWO.)
+A.
+    * An object store
+    * A durable storage system
+Explanation:
+    * Amazon S3 is an object storage service.
+    * Amazon S3 is a durable object storage service.
+
+Q. What is the MINIMUM AWS Support plan that provides technical support through phone calls?
+A. Business
+Explanation: You can call or chat with technical support by 
+using the Business Support plan or the Enterprise Support plan.
+The Business Support plan is the minimum plan that provides this feature.
+
+Q. Which AWS service identifies security groups that allow unrestricted 
+access to a user's AWS resources?
+A. AWS Trusted Advisor
+Explanation: Trusted Advisor checks security groups for rules that allow unrestricted access to a resource.
+Unrestricted access increases opportunities for malicious activity, such as hacking, denial-of-service attacks, or loss of data.
