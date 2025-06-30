@@ -3,5 +3,7 @@
 Making this for my own sake, surely the act of reading and writing all this will help me during the exam.
 Also lost a week+ worth of notes to an Ubuntu backup gone wild so I'm putting it up here on GH.
 
+Hopefully someone stumbles across this one day and finds my leg work useful :D
+
 ## Practice Exam for Anki users
 https://ankiweb.net/shared/info/83472670
